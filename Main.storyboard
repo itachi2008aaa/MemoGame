@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SuperMemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UC3-BK-T48">
+                                <rect key="frame" x="10" y="297" width="408" height="519"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="k2o-uu-LA7">
+                                        <rect key="frame" x="0.0" y="0.0" width="408" height="77"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AC-IH-jci" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" red="0.38403862319999998" green="0.75872001259999999" blue="0.48911008789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="1AC-IH-jci" secondAttribute="height" multiplier="1:1" id="39K-nu-oea"/>
+                                                    <constraint firstAttribute="height" constant="77" id="4IV-Ie-i4k"/>
+                                                    <constraint firstAttribute="width" constant="77" id="iLu-kV-Tu3"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m"/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ixN-oh-2Vo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOY-eR-kl5" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="110.33333333333331" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" red="0.75872001259999999" green="0.37074067700000002" blue="0.35511495250000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="xOY-eR-kl5" secondAttribute="height" multiplier="1:1" id="gEb-CO-BVS"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                                    <color key="baseForegroundColor" red="0.91757386922836304" green="0.64355897903442383" blue="0.56110334396362305" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Pe-fF-5zj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RsB-QP-jR7" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="220.66666666666663" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" red="0.0" green="0.52694917929999996" blue="0.46315983170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="RsB-QP-jR7" secondAttribute="height" multiplier="1:1" id="ndl-4c-l0X"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m"/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7y6-ja-nxa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qH2-R2-Kr8" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="331" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" red="0.47607373720000001" green="0.45052448649999999" blue="0.75872001259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="qH2-R2-Kr8" secondAttribute="height" multiplier="1:1" id="dza-qY-XxI"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m"/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rbf-ce-MGG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1Ch-sk-TWf">
+                                        <rect key="frame" x="0.0" y="110.66666666666669" width="408" height="77"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfp-38-jnc" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" red="0.16066393256187439" green="0.088569857180118561" blue="0.50489234924316406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="77" id="Fel-ts-JhK"/>
+                                                    <constraint firstAttribute="width" secondItem="yfp-38-jnc" secondAttribute="height" multiplier="1:1" id="aYF-AZ-6XM"/>
+                                                    <constraint firstAttribute="height" constant="77" id="dnB-bI-ecg"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m"/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pru-zk-Chk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JM-v8-xe5" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="110.33333333333331" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" red="0.95823627710342407" green="0.0064726690761744976" blue="0.99591702222824097" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="0JM-v8-xe5" secondAttribute="height" multiplier="1:1" id="QbW-Js-SvX"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m"/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AzH-7f-p44"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi0-z2-fbm" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="220.66666666666663" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" red="0.0033790317829698324" green="0.55949681997299194" blue="0.99224346876144409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="zi0-z2-fbm" secondAttribute="height" multiplier="1:1" id="g1J-rr-K5M"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m"/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fgu-qC-iLN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ev-3T-eFp" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="331" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="5Ev-3T-eFp" secondAttribute="height" multiplier="1:1" id="RFh-S9-qZC"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m"/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQP-l8-pLp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7me-Rr-cXK">
+                                        <rect key="frame" x="0.0" y="221" width="408" height="77"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yO-zh-3YM" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" red="0.91486173868179321" green="0.71581500768661499" blue="0.9349096417427063" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="77" id="7ch-fb-I1D"/>
+                                                    <constraint firstAttribute="width" constant="77" id="cRE-Ph-Hce"/>
+                                                    <constraint firstAttribute="width" secondItem="9yO-zh-3YM" secondAttribute="height" multiplier="1:1" id="oaz-U6-MPa"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m"/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ECp-Nx-rjU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UT0-xd-Ai1" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="110.33333333333331" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="UT0-xd-Ai1" secondAttribute="height" multiplier="1:1" id="WKa-qX-dZc"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m"/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJA-Bc-Vij"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUB-y1-CJq" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="220.66666666666663" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="yUB-y1-CJq" secondAttribute="height" multiplier="1:1" id="Jbd-Ne-e0C"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m" title=""/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tgp-PR-u2K"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sJ-ka-T3v" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="331" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="1sJ-ka-T3v" secondAttribute="height" multiplier="1:1" id="Zcz-ZZ-X6n"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m"/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aO8-mO-vA0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7Rk-mk-DOU">
+                                        <rect key="frame" x="0.0" y="331.66666666666663" width="408" height="77"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLj-Dk-5dG" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" red="0.83457213640213013" green="0.96573680639266968" blue="0.022302443161606789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="mLj-Dk-5dG" secondAttribute="height" multiplier="1:1" id="2W8-R9-pEJ"/>
+                                                    <constraint firstAttribute="height" constant="77" id="fcq-Sy-7e2"/>
+                                                    <constraint firstAttribute="width" constant="77" id="nCL-KX-mGh"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m"/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fxq-Zl-dZo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="94.333333333333314" placeholderIntrinsicHeight="94.666666666666671" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwQ-2B-cC7" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="110.33333333333331" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" red="0.60255241394042969" green="0.090675242245197296" blue="0.65508574247360229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="uwQ-2B-cC7" secondAttribute="height" multiplier="1:1" id="byz-i0-0EK"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m" title=""/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pj2-6w-tHz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFG-gr-F0Z" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="220.66666666666663" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="MFG-gr-F0Z" secondAttribute="height" multiplier="1:1" id="zf6-Ys-iJX"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m" title=""/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fjD-4e-hA3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROv-8e-nYC" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="331" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ROv-8e-nYC" secondAttribute="height" multiplier="1:1" id="Tby-Zo-JKD"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m" title=""/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DfD-cY-fGM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NBz-PE-a1h">
+                                        <rect key="frame" x="0.0" y="442" width="408" height="77"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ph-rE-Hz0" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" red="0.0023904843255877495" green="0.027275357395410538" blue="0.99299830198287964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="5Ph-rE-Hz0" secondAttribute="height" multiplier="1:1" id="UcF-34-MgV"/>
+                                                    <constraint firstAttribute="width" constant="77" id="Znz-Ft-bdh"/>
+                                                    <constraint firstAttribute="height" constant="77" id="gVs-FR-6Em"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m"/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x5g-cd-vMh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnB-dA-1oY" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="110.33333333333331" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" red="0.82372695207595825" green="0.071120984852313995" blue="0.071967504918575287" alpha="0.74117648601531982" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="wnB-dA-1oY" secondAttribute="height" multiplier="1:1" id="pVI-Z6-fy9"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m"/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pak-Ea-ees"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiR-xh-kmT" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="220.66666666666663" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="RiR-xh-kmT" secondAttribute="height" multiplier="1:1" id="D8f-OP-fvj"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m"/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8k2-5r-4qr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9W-yr-HMT" customClass="kurd" customModule="SuperMemo" customModuleProvider="target">
+                                                <rect key="frame" x="331" y="0.0" width="77" height="77"/>
+                                                <color key="backgroundColor" red="0.96450740098953247" green="0.87068408727645874" blue="0.062088645994663239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="f9W-yr-HMT" secondAttribute="height" multiplier="1:1" id="WcS-f7-Dk2"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="???m"/>
+                                                <connections>
+                                                    <action selector="logic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1VR-Ed-MQC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="GGU-lF-jDC">
+                                <rect key="frame" x="20" y="826" width="388" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNf-Pm-FOj">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="125" id="rZm-FV-Dg3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIR-Fd-1VS">
+                                        <rect key="frame" x="154" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="jIR-Fd-1VS" secondAttribute="height" multiplier="1:1" id="8wE-cy-aLF"/>
+                                            <constraint firstAttribute="width" constant="80" id="YnD-KI-AFg"/>
+                                            <constraint firstAttribute="height" constant="80" id="pa7-W9-ekr"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="re" title=""/>
+                                        <connections>
+                                            <action selector="res:" destination="BYZ-38-t0r" eventType="touchUpInside" id="otp-z8-48m"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Touches : 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7L-KG-Hv7">
+                                        <rect key="frame" x="263" y="0.0" width="125" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="125" id="9m7-Mv-98y"/>
+                                            <constraint firstAttribute="height" constant="80" id="XsU-KM-8Um"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Nj-YG-Ztg">
+                                <rect key="frame" x="10" y="127" width="408" height="147"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLG-bT-U5X">
+                                        <rect key="frame" x="0.0" y="33.666666666666657" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.82683867216110229" green="0.95425385236740112" blue="0.9521210789680481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="eJX-lc-wmU"/>
+                                            <constraint firstAttribute="width" constant="80" id="vaZ-Yx-Qgu"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="pravo"/>
+                                        <connections>
+                                            <action selector="vpravo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2FO-Fb-JsQ"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="africa" translatesAutoresizingMaskIntoConstraints="NO" id="Ipc-W5-Z8W">
+                                        <rect key="frame" x="94" y="0.0" width="220" height="147"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Ipc-W5-Z8W" secondAttribute="height" multiplier="220:147" id="qet-O1-kjF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBC-JB-j6F">
+                                        <rect key="frame" x="328" y="33.666666666666657" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.93264955282211304" green="0.97147029638290405" blue="0.89541691541671753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="SQw-JQ-9cd"/>
+                                            <constraint firstAttribute="width" constant="80" id="sIJ-e6-WB1"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="levo" title=""/>
+                                        <connections>
+                                            <action selector="vlevo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZf-E4-96Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="HBg-JU-lZQ">
+                                <rect key="frame" x="20" y="46" width="388" height="66"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXt-2q-6rk">
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
+                                        <color key="backgroundColor" red="0.93738037347793579" green="0.72616881132125854" blue="0.72022587060928345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="66" id="LsS-3K-Lnd"/>
+                                            <constraint firstAttribute="height" constant="66" id="edQ-OK-WVz"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="vkl"/>
+                                        <connections>
+                                            <action selector="zvuk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jtq-mF-Bmm"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ULTRASUPERMEMO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RoU-6P-2Lj">
+                                        <rect key="frame" x="101" y="16" width="186" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="CAE-1V-flU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnE-Bp-f4y">
+                                        <rect key="frame" x="322" y="0.0" width="66" height="66"/>
+                                        <color key="backgroundColor" red="0.91328877210617065" green="0.70245999097824097" blue="0.48878467082977295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="7Hu-FG-TPw"/>
+                                            <constraint firstAttribute="width" constant="66" id="wvb-Bn-mNv"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="tanchiro"/>
+                                        <connections>
+                                            <action selector="vkssilka:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LYm-x6-M7o"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.81430381536483765" green="0.86773520708084106" blue="0.95151478052139282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UC3-BK-T48" firstAttribute="top" secondItem="2Nj-YG-Ztg" secondAttribute="bottom" constant="23" id="0Jq-Cb-re9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GGU-lF-jDC" secondAttribute="trailing" constant="20" id="2bU-cM-FhS"/>
+                            <constraint firstItem="GGU-lF-jDC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4R3-f1-xCa"/>
+                            <constraint firstItem="HBg-JU-lZQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="4WO-cf-k3X"/>
+                            <constraint firstItem="2Nj-YG-Ztg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="TwF-U9-lEV"/>
+                            <constraint firstItem="GGU-lF-jDC" firstAttribute="top" secondItem="UC3-BK-T48" secondAttribute="bottom" constant="10" id="bRY-QO-03d"/>
+                            <constraint firstItem="HBg-JU-lZQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="bTm-oa-DVK"/>
+                            <constraint firstItem="HBg-JU-lZQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cHp-Z2-hR5"/>
+                            <constraint firstItem="UC3-BK-T48" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="dYF-M3-2iQ"/>
+                            <constraint firstItem="2Nj-YG-Ztg" firstAttribute="top" secondItem="HBg-JU-lZQ" secondAttribute="bottom" constant="15" id="k6c-6w-Abs"/>
+                            <constraint firstAttribute="bottom" secondItem="GGU-lF-jDC" secondAttribute="bottom" constant="20" id="kDv-QB-P0j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UC3-BK-T48" secondAttribute="trailing" constant="10" id="qMQ-sy-5PN"/>
+                            <constraint firstItem="Ipc-W5-Z8W" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qj9-e8-0dj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HBg-JU-lZQ" secondAttribute="trailing" constant="20" id="wQw-pi-qN8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Nj-YG-Ztg" secondAttribute="trailing" constant="10" id="yeT-x0-unJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Reset" destination="jIR-Fd-1VS" id="htE-og-RBM"/>
+                        <outlet property="UltraMemo" destination="RoU-6P-2Lj" id="AAt-QB-fxy"/>
+                        <outlet property="k1" destination="yUB-y1-CJq" id="8tq-fv-s5U"/>
+                        <outlet property="k10" destination="wnB-dA-1oY" id="Jrf-BE-ltb"/>
+                        <outlet property="k11" destination="RiR-xh-kmT" id="LZF-AH-KN9"/>
+                        <outlet property="k12" destination="zi0-z2-fbm" id="Kvk-qd-byA"/>
+                        <outlet property="k13" destination="yfp-38-jnc" id="JTz-nJ-QLT"/>
+                        <outlet property="k14" destination="f9W-yr-HMT" id="zD1-Ew-JNu"/>
+                        <outlet property="k15" destination="1sJ-ka-T3v" id="t5g-tK-Tie"/>
+                        <outlet property="k16" destination="5Ev-3T-eFp" id="jxN-WC-2Ce"/>
+                        <outlet property="k17" destination="1AC-IH-jci" id="A0a-Cu-oRt"/>
+                        <outlet property="k18" destination="xOY-eR-kl5" id="F74-XN-OYw"/>
+                        <outlet property="k19" destination="RsB-QP-jR7" id="Gqa-9W-GTM"/>
+                        <outlet property="k2" destination="UT0-xd-Ai1" id="Tnz-g6-8se"/>
+                        <outlet property="k20" destination="qH2-R2-Kr8" id="t8N-rA-bB8"/>
+                        <outlet property="k3" destination="5Ph-rE-Hz0" id="0b8-ie-v97"/>
+                        <outlet property="k4" destination="0JM-v8-xe5" id="aA3-Or-609"/>
+                        <outlet property="k5" destination="9yO-zh-3YM" id="VKr-sk-jLG"/>
+                        <outlet property="k6" destination="uwQ-2B-cC7" id="ZoJ-aY-AHD"/>
+                        <outlet property="k7" destination="ROv-8e-nYC" id="Jcf-o9-wMp"/>
+                        <outlet property="k8" destination="mLj-Dk-5dG" id="d9m-B9-ka9"/>
+                        <outlet property="k9" destination="MFG-gr-F0Z" id="Ilf-CQ-sup"/>
+                        <outlet property="kartinka" destination="Ipc-W5-Z8W" id="Bv1-nD-dtx"/>
+                        <outlet property="levo" destination="pBC-JB-j6F" id="iO6-yX-hOS"/>
+                        <outlet property="pravo" destination="oLG-bT-U5X" id="Aep-0W-SZ1"/>
+                        <outlet property="score" destination="pNf-Pm-FOj" id="fkx-bW-auM"/>
+                        <outlet property="sound" destination="DXt-2q-6rk" id="wrW-Xm-Sma"/>
+                        <outlet property="touch" destination="O7L-KG-Hv7" id="s45-wX-IzB"/>
+                        <outlet property="vk" destination="jnE-Bp-f4y" id="Wj3-Gx-hEa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="737" y="-1715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="???m" width="66" height="66"/>
+        <image name="africa" width="220" height="147"/>
+        <image name="levo" width="46" height="49"/>
+        <image name="pravo" width="46" height="49"/>
+        <image name="re" width="66" height="63"/>
+        <image name="tanchiro" width="26" height="61"/>
+        <image name="vkl" width="66" height="66"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
